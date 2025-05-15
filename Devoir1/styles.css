@@ -1,0 +1,130 @@
+/* Custom Variables */
+:root {
+    --bs-primary: #2A9D8F;
+    --bs-primary-rgb: 42, 157, 143;
+    --bs-accent: #E76F51;
+    --bs-accent-rgb: 231, 111, 81;
+    --bs-white-10: rgba(255, 255, 255, 0.1);
+}
+
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--bs-primary);
+  color: white;
+  border-color: var(--bs-primary);
+}
+
+/* Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6, .btn, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Classes */
+.btn-accent {
+    background-color: var(--bs-accent);
+    border-color: var(--bs-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: transparent;
+    border-color: var(--bs-accent);
+    color: var(--bs-accent);
+}
+
+.bg-primary-subtle {
+    background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
+}
+
+.bg-white-10 {
+    background-color: var(--bs-white-10);
+}
+
+.bg-white-10:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.py-6 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Section Title */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--bs-primary);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    padding-top: 80px;
+    position: relative;
+}
+
+.hero-shapes {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape-1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    top: 20%;
+    right: 10%;
+}
+
+.shape-2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(var(--bs-accent-rgb), 0.1);
+    top: 50%;
+    right: 30%;
+}
+
+.shape-3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(var(--bs-primary-rgb), 0.2);
+    top: 70%;
+    right: 20%;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-shapes {
+        opacity: 0.3;
+    }
+}
