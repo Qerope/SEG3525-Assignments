@@ -2325,12 +2325,12 @@ export default function InfoPage() {
                   <Paragraph style={{ fontSize: "16px", marginBottom: "12px" }}>
                     <strong>GitHub Pages:</strong>{" "}
                     <a
-                      href="https://qerope.github.io/SEG3525-Assignments/Devoir2/"
+                      href="https://qerope.github.io/repo-node/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: theme.token.colorPrimary, textDecoration: "underline" }}
                     >
-                      https://qerope.github.io/SEG3525-Assignments/Devoir2/
+                      https://qerope.github.io/repo-node/
                     </a>
                   </Paragraph>
                 </div>
