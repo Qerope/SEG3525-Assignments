@@ -2314,23 +2314,34 @@ export default function InfoPage() {
                   <Paragraph style={{ fontSize: "16px", marginBottom: "12px" }}>
                     <strong>GitHub Repository:</strong>{" "}
                     <a
-                      href="https://github.com/Qerope/SEG3525-Assignments"
+                      href="https://github.com/Qerope/SEG3525-Assignments/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: theme.token.colorPrimary, textDecoration: "underline" }}
                     >
-                      https://github.com/Qerope/SEG3525-Assignments
+                      https://github.com/Qerope/SEG3525-Assignments/
                     </a>
                   </Paragraph>
                   <Paragraph style={{ fontSize: "16px", marginBottom: "12px" }}>
-                    <strong>GitHub Pages:</strong>{" "}
+                    <strong>Portfolio:</strong>{" "}
                     <a
-                      href="https://qerope.github.io/repo-node/"
+                      href="https://qerope.github.io/SEG3525-Assignments/Devoir1/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: theme.token.colorPrimary, textDecoration: "underline" }}
                     >
-                      https://qerope.github.io/repo-node/
+                      https://qerope.github.io/SEG3525-Assignments/Devoir1/
+                    </a>
+                  </Paragraph>
+                  <Paragraph style={{ fontSize: "16px", marginBottom: "12px" }}>
+                    <strong>Live Deployment:</strong>{" "}
+                    <a
+                      href="https://repo-node-five.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: theme.token.colorPrimary, textDecoration: "underline" }}
+                    >
+                      https://repo-node-five.vercel.app/
                     </a>
                   </Paragraph>
                 </div>
