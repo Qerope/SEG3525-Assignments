@@ -2,6 +2,7 @@
   "name": "hairsalon",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://qerope.github.io/SEG3525-Assignments/Devoir2/out",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
