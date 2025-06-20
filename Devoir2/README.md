@@ -1,10 +1,4 @@
-Sure! Here's a sample `README` that includes the instructions you mentioned:
-
----
-
-# Project Name
-
-Welcome to the **Project Name** repository! This project is a Node.js application that provides an API and a frontend interface. To get started with development or to deploy it on your local machine, please follow the instructions below.
+Welcome to this repository! This project is a Node.js application that provides a frontend interface. To get started with development or to deploy it on your local machine, please follow the instructions below.
 
 ## Prerequisites
 
