@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  body {
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .chart-tooltip {
+    @apply bg-white border border-gray-200 rounded-lg shadow-lg p-3;
+  }
+
+  .chart-tooltip-label {
+    @apply font-medium text-gray-900 mb-1;
+  }
+
+  .chart-tooltip-item {
+    @apply flex items-center justify-between text-sm;
+  }
+
+  
+  .interactive-element {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .interactive-element:hover {
+    @apply transform scale-105;
+  }
+
+  
+  .comparison-a {
+    @apply border-blue-500 bg-blue-50 text-blue-700;
+  }
+
+  .comparison-b {
+    @apply border-red-500 bg-red-50 text-red-700;
+  }
+
+  
+  .focus-enhanced:focus {
+    @apply outline-none ring-2 ring-offset-2 ring-blue-500;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+
+.font-cyrillic {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+
+.recharts-tooltip-wrapper {
+  z-index: 1000;
+}
+
+.recharts-active-dot {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+
+.comparison-card {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.comparison-card:hover {
+  @apply shadow-lg transform -translate-y-1;
+}
+
+
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 200ms ease-out;
+}
+
+.dropdown-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 200ms ease-in;
+}
+
+
+@media (max-width: 640px) {
+  .text-responsive {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .text-responsive {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
