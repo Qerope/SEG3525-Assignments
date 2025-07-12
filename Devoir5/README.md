@@ -17,7 +17,7 @@ To install the dependencies for this project, follow these steps:
 
    ```bash
    git clone https://qerope.github.io/SEG3525-Assignments
-   cd SEG3525-Assignments/Devoir4
+   cd SEG3525-Assignments/Devoir5
    ```
 
 2. **Install the dependencies**:
